@@ -8,18 +8,13 @@ public class Homework1hour {
         int minutes = 60;
 
 
-
-
         System.out.println("Введите кол-во секунд");
         Scanner in = new Scanner(System.in);
         second = in.nextInt();
         System.out.println("Введите кол-во минут");
         minutes = in.nextInt();
         System.out.println("На выходе 60 минут(1-час)");
-        System.out.println(second/minutes);
-
-
-
+        System.out.println(second / minutes);
 
 
     }

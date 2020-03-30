@@ -14,13 +14,9 @@ public class Homeworkpetrol {
 
         System.out.println("Введите количество бензина");
         count = in.nextInt();
-        int total = price*count;
+        int total = price * count;
         System.out.println("Стоимость бензина");
         System.out.println(total);
-
-
-
-
 
 
     }

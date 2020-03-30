@@ -14,7 +14,7 @@ public class HomeworkSalary {
         System.out.println("Введите налог на зарплату 0,13");
 
         tax = in.nextDouble();
-        double salaryNet = salaryGross*(1-tax);
+        double salaryNet = salaryGross * (1 - tax);
 
         System.out.println("Конечная зарплата");
         System.out.println(salaryNet);
