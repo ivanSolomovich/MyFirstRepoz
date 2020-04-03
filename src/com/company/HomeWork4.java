@@ -9,7 +9,7 @@ public class HomeWork4 {
         int mnoj = input2();
 
         for (int i = 1; i < iter; i++) {
-            int a = i * mnoj; //Здесь не правильная формула!
+            int a = i * mnoj;
             System.out.println("Значение " + a);
         }
     }
