@@ -1,6 +1,6 @@
 package HomeWork9;
 
-public class Duck extends Animal implements Flyable, Swimable {
+public class Duck extends Animal implements Flyable, Swimable, Runnable {
 
     public Duck(String TheNickNameOfTheAnimal) {
         super(TheNickNameOfTheAnimal);
@@ -18,9 +18,10 @@ public class Duck extends Animal implements Flyable, Swimable {
 
     @Override
     public void swim() {
-        System.out.println("Утка поплыла");
+        System.out.println(" Утка поплыла");
+
+    }
+        public void run() {
+        System.out.println("Утка побежала");
     }
 }
-
-
-
