@@ -9,7 +9,7 @@ public class LibraryStorage {
     static final Logger log = Logger.getLogger(LibraryStorage.class.getName());
 
     public void saveLibrary(Library library) {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("library.dat"))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("library.txt"))) {
             oos.writeObject(library);
             log.info("Библиотека сохранена в library.dat");
         } catch (IOException e) {
@@ -19,7 +19,7 @@ public class LibraryStorage {
     }
 
     public Library loadLibrary() {
-        File file = new File("library.dat");
+        File file = new File("library.txt");
         if (file.exists() && file.isFile()) {
             try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
                 return (Library) ois.readObject();

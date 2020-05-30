@@ -4,12 +4,13 @@ package HomeWork17;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-public class Library {
+public class Library implements Serializable {
     static final Logger log = Logger.getLogger(Library.class.getName());
     final List<Book> booklist = new LinkedList<>();
 
@@ -63,10 +64,12 @@ public class Library {
     }
 
     private void showBooks() {
+        log.info("****************************************************");
         for (Book book: booklist){
             log.info(book.toString());
 
         }
+        log.info("****************************************************");
     }
 
     private void addBook(Book book) {
